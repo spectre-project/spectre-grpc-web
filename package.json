@@ -1,0 +1,31 @@
+{
+  "name": "@spectre/grpc-web",
+  "version": "1.0.3",
+  "description": "Web gRPC client for spectre-wallet",
+  "main": "dist/index.js",
+  "authors": [
+    {
+      "name": "ASPECTRON Inc."
+    },
+    {
+      "name": "Spectre"
+    }
+  ],
+  "license": "ISC",
+  "scripts": {
+    "watch": "tsc --watch",
+    "prepublishOnly": "rm -rf ./dist && rm -f package-lock.json && npm install && tsc"
+  },
+  "dependencies": {
+    "@aspectron/flow-grpc-web": ">=0.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.9",
+    "typescript": "^4.0.5"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "types"
+  ]
+}
