@@ -14,7 +14,8 @@
   "license": "ISC",
   "scripts": {
     "watch": "tsc --watch",
-    "prepublishOnly": "rm -rf ./dist && rm -f package-lock.json && npm install && tsc"
+    "prepublishOnly": "rm -rf ./dist && rm -f package-lock.json && npm install && tsc",
+    "prepare": "tsc"
   },
   "dependencies": {
     "@aspectron/flow-grpc-web": ">=0.0.7"
